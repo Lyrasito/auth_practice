@@ -1,0 +1,43 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFyaWUiLCJpYXQiOjE2MDQ0MTk3OTAsImV4cCI6MTYwNDQxOTgwNSwiYXVkIjoiNWZhMTYwMTM0Yzc0YWMyYzM4YjY0MGRkIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.loh3ifmkkWPFJrN7vD9_TqBVI_eQEVuYqKWMgsZc9k43
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "myname4@gmail.com",
+    "password": "1234"
+}
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "myname4@gmail.com",
+    "password": "1234"
+}
+
+
+###
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFyaWUiLCJpYXQiOjE2MDQ0MjAzMTcsImV4cCI6MTYzNTk3NzkxNywiYXVkIjoiNWZhMTYwMTM0Yzc0YWMyYzM4YjY0MGRkIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.Kt3N4Eq7wL4bbBVUI6Bzm51mAtB5RLYnykgw_sQndyw"
+}
+
+###
+
+DELETE http://localhost:3000/auth/logout
+
+###
+
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+    "abc": "123",
+    "were": "tanking"
+}
